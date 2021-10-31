@@ -1,0 +1,222 @@
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.main-section{
+    width: 80%;
+    height: 100%;
+    background-color: aquamarine;
+
+    .service-header{
+        width: 100%;
+        height: 100vh;
+        border: 2px solid orange;
+
+        display: flex;
+        justify-content: space-between;
+
+        .service-heading{
+            width: 47%;
+            height: 100%;
+            border: 2px solid black;
+        }
+
+        .service-paragraph{
+            width: 47%;
+            height: 100%;
+            border: 2px solid black;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .para-heading{
+                width: 100%;
+                height: 47%;
+                border: 1px solid rgb(54, 54, 28);
+
+            }
+
+            .para-content{
+                width: 100%;
+                height: 47%;
+                border: 1px solid rgb(54, 54, 28);
+                
+            }
+
+        }
+
+    }
+
+    .service-cards{
+        width: 100%;
+        height: 120vh;
+        border: 2px solid olivedrab;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .row-1-cards{
+            width: 100%;
+            height: 47%;
+            border: 1px solid green;
+
+            display: flex;
+            justify-content: space-between;
+
+            .card-style{
+                width: 30%;
+                height: 100%;
+                border: 1px solid black;
+            }
+        }
+
+        .row-2-cards{
+            width: 100%;
+            height: 47%;
+            border: 1px solid green;
+
+            display: flex;
+            justify-content: space-between;
+
+            .card-style{
+                width: 30%;
+                height: 100%;
+                border: 1px solid black;
+
+ 
+            }
+        }
+    }
+}
+
+
+
+
+.card-content-style{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .service-pic{
+        width: 100%;
+        height: 70%;
+        border: 1px solid indigo;
+    }
+
+    .card-heading{
+        width: 100%;
+        height: 14%;
+        border: 1px solid indigo;
+    }
+
+    .card-paragraph{
+        width: 100%;
+        height: 14%;
+        border: 1px solid indigo;
+    }
+}
+
+
+// media query for service header
+
+@media screen and (max-width: 480px) {
+
+    .service-header{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .service-heading{
+            width: 100% !important;
+            height: 100%;
+            border: 2px solid black;
+        }
+
+        .service-paragraph{
+            width: 100% !important;
+            height: 100%;
+
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .para-heading{
+                width: 100%;
+                height: 47%;
+                border: 1px solid rgb(54, 54, 28);
+
+            }
+
+            .para-content{
+                width: 100%;
+                height: 47%;
+                border: 1px solid rgb(54, 54, 28);
+                
+            }
+
+        }
+
+    }
+
+
+}
+
+
+// media query for service cards
+
+
+@media screen and (max-width: 480px) {
+
+    .service-cards{
+
+        height: auto !important;
+
+    
+        .row-1-cards{
+            width: 100%;
+            height: auto !important;
+            border: 1px solid green;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .card-style{
+                width: 100% !important;
+                height: 300px !important;
+                border: 1px solid black;
+            }
+        }
+    
+        .row-2-cards{
+            width: 100%;
+            height: auto !important;
+            border: 1px solid green;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .card-style{
+                width: 100% !important;
+                height: 300px !important;
+                border: 1px solid black;
+    
+    
+            }
+        }
+    }
+}
+

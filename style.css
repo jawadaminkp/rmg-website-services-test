@@ -1,0 +1,240 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section {
+  width: 80%;
+  height: 100%;
+  background-color: aquamarine;
+}
+
+.main-section .service-header {
+  width: 100%;
+  height: 100vh;
+  border: 2px solid orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-section .service-header .service-heading {
+  width: 47%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.main-section .service-header .service-paragraph {
+  width: 47%;
+  height: 100%;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-section .service-header .service-paragraph .para-heading {
+  width: 100%;
+  height: 47%;
+  border: 1px solid #36361c;
+}
+
+.main-section .service-header .service-paragraph .para-content {
+  width: 100%;
+  height: 47%;
+  border: 1px solid #36361c;
+}
+
+.main-section .service-cards {
+  width: 100%;
+  height: 120vh;
+  border: 2px solid olivedrab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-section .service-cards .row-1-cards {
+  width: 100%;
+  height: 47%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-section .service-cards .row-1-cards .card-style {
+  width: 30%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.main-section .service-cards .row-2-cards {
+  width: 100%;
+  height: 47%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-section .service-cards .row-2-cards .card-style {
+  width: 30%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.card-content-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-content-style .service-pic {
+  width: 100%;
+  height: 70%;
+  border: 1px solid indigo;
+}
+
+.card-content-style .card-heading {
+  width: 100%;
+  height: 14%;
+  border: 1px solid indigo;
+}
+
+.card-content-style .card-paragraph {
+  width: 100%;
+  height: 14%;
+  border: 1px solid indigo;
+}
+
+@media screen and (max-width: 480px) {
+  .service-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .service-header .service-heading {
+    width: 100% !important;
+    height: 100%;
+    border: 2px solid black;
+  }
+  .service-header .service-paragraph {
+    width: 100% !important;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .service-header .service-paragraph .para-heading {
+    width: 100%;
+    height: 47%;
+    border: 1px solid #36361c;
+  }
+  .service-header .service-paragraph .para-content {
+    width: 100%;
+    height: 47%;
+    border: 1px solid #36361c;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .service-cards {
+    height: auto !important;
+  }
+  .service-cards .row-1-cards {
+    width: 100%;
+    height: auto !important;
+    border: 1px solid green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .service-cards .row-1-cards .card-style {
+    width: 100% !important;
+    height: 300px !important;
+    border: 1px solid black;
+  }
+  .service-cards .row-2-cards {
+    width: 100%;
+    height: auto !important;
+    border: 1px solid green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .service-cards .row-2-cards .card-style {
+    width: 100% !important;
+    height: 300px !important;
+    border: 1px solid black;
+  }
+}
+/*# sourceMappingURL=style.css.map */
